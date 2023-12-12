@@ -3,6 +3,6 @@ from new.models import Room
 
 
 class RoomSeriallizer(ModelSerializer):
-    class meta:
+    class Meta:
         model = Room
         fields = '__all__'
