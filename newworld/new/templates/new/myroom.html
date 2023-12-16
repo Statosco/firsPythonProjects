@@ -67,7 +67,7 @@
                 <p>Hosted By</p>
                 <a href="{%url 'userProfile' room.host.id%}" class="room__author">
                   <div class="avatar avatar--small">
-                    <img src="https://randomuser.me/api/portraits/men/37.jpg" />
+                    <img src="{{room.host.avatar.url}}" />
                   </div>
                   <span>@{{room.host.username}}</span>
                 </a>
@@ -87,7 +87,7 @@
                     <div class="thread__author">
                       <a href="{% url 'userProfile' mes.user.id %}" class="thread__authorInfo">
                         <div class="avatar avatar--small">
-                          <img src="https://randomuser.me/api/portraits/men/37.jpg" />
+                          <img src="{{message.host.avatar.url}}" />
                         </div>
                         <span>@{{mes.user.username}}</span>
                       </a>
